@@ -1,0 +1,295 @@
+﻿<Window x:Class="SCRGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SCRGame"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="720" Width="840" ResizeMode="NoResize">
+    <Grid x:Name="ContentRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="332*"/>
+            <RowDefinition Height="13*"/>
+        </Grid.RowDefinitions>
+        <ItemsControl x:FieldModifier="public" x:Name="ShieldPictureRedItems" Margin="10,125,9.6,366.4" HorizontalAlignment="Center" ItemsSource="{Binding}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,0,0,5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition  />
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="1" Margin="5"/>
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <ItemsControl x:FieldModifier="public" x:Name="SpaceshipPictureRedItems" Margin="10,125,9.6,366.4" HorizontalAlignment="Center" ItemsSource="{Binding}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,0,0,5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition  />
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="1" Margin="5"/>
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <Button x:FieldModifier="public" x:Name="ExecuteButton" Content="Rozpocznij" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="135,10,0,0" Height="24" Click="Execute_Click" RenderTransformOrigin="-0.197,0.45"/>
+        <ItemsControl x:FieldModifier="public" x:Name="ShieldPictureBlueItems" Margin="10,430,9.6,61.4" HorizontalAlignment="Center" ItemsSource="{Binding}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,0,0,5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="1" Margin="5"/>
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <ItemsControl x:FieldModifier="public" x:Name="SpaceshipPictureBlueItems" Margin="10,430,9.6,61.4" HorizontalAlignment="Center" ItemsSource="{Binding}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,0,0,5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="1" Margin="5"/>
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <Label Content="Red Team" HorizontalAlignment="Left" Margin="10,295,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <Label Content="Blue Team" HorizontalAlignment="Left" Margin="10,395,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <ItemsControl x:FieldModifier="public" x:Name="LifeBarsRedItems" Margin="10,125,9.6,509.4" HorizontalAlignment="Center" ItemsSource="{Binding}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,0,0,5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition  />
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="1" Margin="5"/>
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <ItemsControl x:FieldModifier="public" x:Name="LifeBarsBlueItems" Margin="10,430,9.6,204.4" HorizontalAlignment="Center" ItemsSource="{Binding}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,0,0,5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition  />
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="1" Margin="5"/>
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <ItemsControl x:FieldModifier="public" x:Name="ShieldBarsBlueItems" Margin="10,460,9.6,174.4" HorizontalAlignment="Center" ItemsSource="{Binding}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,0,0,5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition  />
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="1" Margin="5"/>
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <ItemsControl x:FieldModifier="public" x:Name="ShieldBarsRedItems" Margin="10,160,9.6,474.4" HorizontalAlignment="Center" ItemsSource="{Binding}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,0,0,5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition  />
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="1" Margin="5"/>
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <ItemsControl x:FieldModifier="public" x:Name="DestroyedRedItems" Margin="10,125,9.6,366.4" HorizontalAlignment="Center" ItemsSource="{Binding}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,0,0,5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition  />
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="1" Margin="5"/>
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <ItemsControl x:FieldModifier="public" x:Name="DestroyedBlueItems" Margin="10,430,9.6,61.4" HorizontalAlignment="Center" ItemsSource="{Binding}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,0,0,5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="1" Margin="5"/>
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <ItemsControl x:FieldModifier="public" x:Name="ShieldPictureRedItems1" Margin="145,49,142.6,544.4" HorizontalAlignment="Center" ItemsSource="{Binding}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,0,0,5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition  />
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="1" Margin="5"/>
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <ItemsControl x:FieldModifier="public" x:Name="ShieldPictureRedItems2" Margin="166,608,184.6,11.4" HorizontalAlignment="Center" ItemsSource="{Binding}" Grid.RowSpan="2">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,0,0,5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition  />
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="1" Margin="5"/>
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <ItemsControl x:FieldModifier="public" x:Name="GeneratorBarsRedItems" Margin="145,49,142.6,588.4" HorizontalAlignment="Center" ItemsSource="{Binding}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,0,0,5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition  />
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="1" Margin="5"/>
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <ItemsControl x:FieldModifier="public" x:Name="GeneratorBarsBlueItems" Margin="166,608,184.6,29.4" HorizontalAlignment="Center" ItemsSource="{Binding}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,0,0,5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition  />
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="1" Margin="5"/>
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <ItemsControl x:FieldModifier="public" x:Name="LabelsRedItems" Margin="10,299,9.6,321.4" HorizontalAlignment="Center" ItemsSource="{Binding}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,0,0,5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition  />
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="1" Margin="5"/>
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <ItemsControl x:FieldModifier="public" x:Name="LabelsBlueItems" Margin="10,399,9.6,249.4" ItemsSource="{Binding}" HorizontalAlignment="Center" Grid.RowSpan="2">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,0,0,5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition  />
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="1" Margin="5"/>
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <ComboBox x:FieldModifier="public" x:Name="ShipsNumberComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Height="24" Margin="10,10,0,0">
+            <ComboBoxItem IsSelected="True">2 statki</ComboBoxItem>
+            <ComboBoxItem>3 statki</ComboBoxItem>
+            <ComboBoxItem>4 statki</ComboBoxItem>
+        </ComboBox>
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+C:\Users\Lokney\Desktop\Github\SCR\Projekt\SCRGame\bin\Debug\SCRGame.exe.config
+C:\Users\Lokney\Desktop\Github\SCR\Projekt\SCRGame\bin\Debug\SCRGame.exe
+C:\Users\Lokney\Desktop\Github\SCR\Projekt\SCRGame\bin\Debug\SCRGame.pdb
+C:\Users\Lokney\Desktop\Github\SCR\Projekt\SCRGame\obj\Debug\SCRGame.csprojAssemblyReference.cache
+C:\Users\Lokney\Desktop\Github\SCR\Projekt\SCRGame\obj\Debug\MainWindow.g.cs
+C:\Users\Lokney\Desktop\Github\SCR\Projekt\SCRGame\obj\Debug\App.g.cs
+C:\Users\Lokney\Desktop\Github\SCR\Projekt\SCRGame\obj\Debug\SCRGame_MarkupCompile.cache
+C:\Users\Lokney\Desktop\Github\SCR\Projekt\SCRGame\obj\Debug\SCRGame_MarkupCompile.lref
+C:\Users\Lokney\Desktop\Github\SCR\Projekt\SCRGame\obj\Debug\MainWindow.baml
+C:\Users\Lokney\Desktop\Github\SCR\Projekt\SCRGame\obj\Debug\SCRGame.g.resources
+C:\Users\Lokney\Desktop\Github\SCR\Projekt\SCRGame\obj\Debug\SCRGame.Properties.Resources.resources
+C:\Users\Lokney\Desktop\Github\SCR\Projekt\SCRGame\obj\Debug\SCRGame.csproj.GenerateResource.cache
+C:\Users\Lokney\Desktop\Github\SCR\Projekt\SCRGame\obj\Debug\SCRGame.csproj.CoreCompileInputs.cache
+C:\Users\Lokney\Desktop\Github\SCR\Projekt\SCRGame\obj\Debug\SCRGame.exe
+C:\Users\Lokney\Desktop\Github\SCR\Projekt\SCRGame\obj\Debug\SCRGame.pdb
