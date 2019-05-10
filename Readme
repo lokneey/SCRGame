@@ -4,6 +4,8 @@ Game allows user (Red Team) to play against computer (Blue Team). Game is simula
 
 In this game every generator and every spaceship is seperate thread which is is executed in parrarel way. Every spaceships thread can affect on other spaceship thread during the shooting to the enemy. Also every spaceship affects generators threads.
 
+If you have any question about this project you can find me on www.ipprograms.pl.
+
 The MIT License
 
 Copyright 2019 Łukasz Granat and Stanisław Pietrowski
